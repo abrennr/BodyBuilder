@@ -65,7 +65,6 @@ BodyBuilder is distributed as source code, along with documentation and a sample
 The project contains following files and subdirectories:
 
 * `LICENSE.txt` - the license for this software
-* `lib/` - a folder containing supporting libraries for the software.  
 * `samples/` - a folder containing sample data to illustrate use of the software
 * `src/` - the Java source code for the software.
 * `README.md` - documentation for the software.
