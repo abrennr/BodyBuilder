@@ -31,9 +31,11 @@ This Documentation Date: February, 2013
 <a name="1Overview"></a> 
 ## 1. Overview
 
-BodyBuilder is a lightweight graphical desktop application that supports the creation of
+BodyBuilder is a graphical desktop application that supports the creation of
 simple XML structural metadata in METS [see <http://www.loc.gov/standards/mets/>]
-for digitized texts.  The software presents a graphical tree
+for digitized texts.  
+
+The software presents a tree-like
 representation of the digitized text and its associated page images, and supports the entry of
 structural divisions (e.g., chapters, sections, articles), and native pagination.  The entered
 metadata is saved as a simple METS XML document which may be further transformed as part of a
@@ -45,17 +47,30 @@ University of Pittsburgh.
 Questions, comments, or suggestions regarding BodyBuilder should be directed to the
 Digital Research Library (<uls-digitalresearchlibrary@mail.pitt.edu>).
 
+*History*: BodyBuilder evolved from an earlier tool used for capturing pagination and structural
+divisions within TEI Lite `<BODY>` elements [see <http://www.tei-c.org/>], and that is how it got
+its name.
+
 <a name="2Installation"></a> 
 ## 2. Installation
+
+The source can be compiled using the command-line java compiler `javac`, or built using your preferred
+IDE.  If compiling by hand, the program can be started with the command
+
+	java -cp /path/to/compiled/src edu.pitt.library.drl.bodybuilder.Main
+	
+In our local environment, we have built an executable jar file that is launched via Java Web Start;
+this simplifies usage from any device in our environment.
 
 <a name="21Requirements"></a> 
 ### 2.1 Requirements
 
-BodyBuilder requires a Java Runtime Environment of version 1.5 or higher.  It should run on
-any operating system for which the Java Runtime Environment is available; however BodyBuilder
-has only been tested on Windows XP, Windows 7, and Mac OS X. There are also some simple requirements
-to prepare data for use with BodyBuilder; these are covered in section 3.1 "Preparing Texts for
-BodyBuilder" below.
+BodyBuilder requires no libraries other than those included standard with Java.
+It has been run with various Java Runtime Environments of version 1.5 or higher.
+It should run on any operating system for which the Java Runtime Environment is available; however 
+BodyBuilder has only been tested on Windows XP, Windows 7, and Mac OS X.
+There are also some simple requirements to prepare data for use with BodyBuilder; these are covered in
+section 3.1 "Preparing Texts for BodyBuilder" below.
 
 <a name="22Distribution"></a> 
 ### 2.2 Distribution
