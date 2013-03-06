@@ -31,7 +31,7 @@ public class TextInstance {
              
         textDir = file;
         ID = textDir.getName();
-        xmlFile = new File(file + "\\" + ID + ".mets.xml");
+        xmlFile = new File(file + File.separator + ID + ".mets.xml");
         
         // Get the number of pages from the jpg files in the directory
         // (uses an anonymous inner class to implement a FilenameFilter)
