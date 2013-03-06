@@ -191,7 +191,7 @@ public class EditWindow extends JFrame
         // The SplitPane
         JSplitPane split = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, leftPanel, rightPanel);
         split.setOneTouchExpandable(true);
-        split.setDividerLocation(250);
+        split.setDividerLocation(375);
         frame.add(split);
         
         // Final overall Frame set-up
