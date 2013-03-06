@@ -92,7 +92,7 @@ The project contains following files and subdirectories:
 ### 3.1 Preparing Texts for BodyBuilder
 
 To use a text in BodyBuilder, you will need to have a directory (representing the text) on an
-accessible disk containing sequentially-named jpeg image files (representing the page images).  
+accessible disk containing sequentially-named jpeg image files (representing the page images).
 The image files must have the extension ".jpg" to be found by the software.   See the text in 
 the "samples" folder for an example.
 
@@ -119,9 +119,10 @@ OCR into the metadata for structural divisions.
 <a name="32StartingBodyBuilder"></a> 
 ### 3.2 Starting BodyBuilder
 
-On our tested systems, double-clicking a compiled BodyBuilder.jar launched the application.  It should
-also be possible to launch the application by opening a command shell, changing directories to
-the BodyBuilder folder, and typing `java -jar BodyBuilder.jar`
+Starting BodyBuilder depends on how it has been built, described in Section 2. "Installation" above.
+After launching, the application will open a window that scales to available screen dimensions. The
+main window is a split screen, with an area for the document tree view on the left, and an area for
+the page images (or text) on the right.  Both areas will be empty until a text is loaded.
 
 <a name="33OpeningAText"></a> 
 ### 3.3 Opening A Text
