@@ -193,7 +193,7 @@ Structural divisions are inserted to represent divisions in the physical text an
 metadata. Currently BodyBuilder supports only simple division metadata: a title for the division.
  Previous versions of BodyBuilder, prior to its using
 the METS schema, allowed for extended division metadata including page range and authors.  In METS this
-more detailed metadata should be stored in a separate <dmdSec>, using a separate descriptive standard
+more detailed metadata should be stored in a separate `<dmdSec>`, using a separate descriptive standard
 (e.g., MODS).  Although this functionality could be added to BodyBuilder, it is not currently available.
 For more information on the METS XML that is created when adding divisions, see section 4, "METS XML Output" below.
 
@@ -246,7 +246,7 @@ tree hierarchy.  To delete a division:
 Saving a text writes the document structure to disk as an XML file.  The file is named `<identifier>.mets.xml`, 
 and is written in the same directory that was opened to find the page image files.
 
-To save the text, choose File->Save from the menu.
+To save the text, choose `File -> Save` from the menu.
 
 <a name="310ClosingBodyBuilder"></a> 
 ### 3.10 Closing BodyBuilder
