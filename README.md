@@ -36,8 +36,8 @@ simple XML structural metadata in METS [see <http://www.loc.gov/standards/mets/>
 for digitized texts.  
 
 The software presents a tree-like
-representation of the digitized text and its associated page images, and supports the entry of
-structural divisions (e.g., chapters, sections, articles), and native pagination.  The entered
+representation of the digitized text and its associated page images and supports the entry of
+structural divisions (e.g., chapters, sections, articles) and native pagination.  The entered
 metadata is saved as a simple METS XML document which may be further transformed as part of a
 larger digital object creation workflow.
 
@@ -48,7 +48,7 @@ Questions, comments, or suggestions regarding BodyBuilder should be directed to 
 Digital Research Library (<uls-digitalresearchlibrary@mail.pitt.edu>).
 
 *History*: BodyBuilder evolved from an earlier tool used for capturing pagination and structural
-divisions within TEI Lite `<BODY>` elements [see <http://www.tei-c.org/>], and that is how it got
+divisions within TEI Lite `<BODY>` elements [see <http://www.tei-c.org/>] and that is how it got
 its name.
 
 <a name="2Installation"></a> 
@@ -92,9 +92,13 @@ The project contains following files and subdirectories:
 ### 3.1 Preparing Texts for BodyBuilder
 
 To use a text in BodyBuilder, you will need to have a directory (representing the text) on an
-accessible disk containing sequentially-named jpeg image files (representing the page images).
+accessible disk containing sequentially-named JPEG image files (representing the page images).
 The image files must have the extension ".jpg" to be found by the software.   See the text in 
 the "samples" folder for an example.
+
+*Note*: In our workflow, the JPEG images used in BodyBuilder are created from TIFF images but are
+used to speed the processing of large texts.  For this reason, the METS XML produced assumes a
+file extension of ".tif" in the file URI.  (See section 4. "METS XML Output" below.) 
 
 The images will display at their actual resolution in the application, so to fit an entire 
 page on your screen you may want to constrain the long side of the image to 700-800 pixels 
